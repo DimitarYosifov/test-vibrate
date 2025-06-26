@@ -15,7 +15,7 @@
     justify-content: center;
     flex-direction: column;
     width: 100%;">
-        <div onclick="start()" style="padding: 25px;">start10</div>
+        <div onclick="start()" style="padding: 25px;">start11</div>
         <div onclick="stop()" style="padding: 25px;">stop</div>
         <div id="count">1</div>
     </div>
@@ -24,9 +24,15 @@
         let counter = 1;
         const start = () => {
             if (window.navigator && window.navigator.vibrate) {
+                // window.navigator.vibrate([
+                //     250, 0, 250, 0, 250, 0, 250, 0, 250, 0, 250, 0, 250, 0, 250, 0, 250, 0, 250, 0,
+                //     250, 0, 250, 0, 250, 0, 250, 0, 250, 0, 250, 0, 250, 0, 250, 0, 250, 0, 250, 0
+                // ]);
                 window.navigator.vibrate([
-                    250, 0, 250, 0, 250, 0, 250, 0, 250, 0, 250, 0, 250, 0, 250, 0, 250, 0, 250, 0,
-                    250, 0, 250, 0, 250, 0, 250, 0, 250, 0, 250, 0, 250, 0, 250, 0, 250, 0, 250, 0
+                    250, 250, 250, 250, 250, 250, 250, 250, 250, 250,
+                    250, 250, 250, 250, 250, 250, 250, 250, 250, 250,
+                    250, 250, 250, 250, 250, 250, 250, 250, 250, 250,
+                    250, 250, 250, 250, 250, 250, 250, 250, 250, 250
                 ]);
             }
         }
