@@ -15,7 +15,7 @@
     justify-content: center;
     flex-direction: column;
     width: 100%;">
-        <div onclick="start()" style="padding: 25px;">start15</div>
+        <div onclick="start()" style="padding: 25px;">start16</div>
         <div onclick="start5000()" style="padding: 25px;">start5000</div>
         <div onclick="stop()" style="padding: 25px;">stop</div>
         <div id="count">1</div>
@@ -41,15 +41,14 @@
         }
 
         const start5000 = () => {
-            if (window.navigator && window.navigator.vibrate) {
-                // window.navigator.vibrate([
-                //     250, 0, 250, 0, 250, 0, 250, 0, 250, 0, 250, 0, 250, 0, 250, 0, 250, 0, 250, 0,
-                //     250, 0, 250, 0, 250, 0, 250, 0, 250, 0, 250, 0, 250, 0, 250, 0, 250, 0, 250, 0
-                // ]);
-                window.navigator.vibrate([
-                    100, 0
-                ], 1);
-            }
+            window.navigator.vibrate([
+                100, 0, 100, 0, 100, 0, 100, 0, 100, 0, 100, 0, 100, 0, 100, 0, 100, 0, 100, 0,
+                100, 0, 100, 0, 100, 0, 100, 0, 100, 0, 100, 0, 100, 0, 100, 0, 100, 0, 100, 0,
+                100, 0, 100, 0, 100, 0, 100, 0, 100, 0, 100, 0, 100, 0, 100, 0, 100, 0, 100, 0,
+                100, 0, 100, 0, 100, 0, 100, 0, 100, 0, 100, 0, 100, 0, 100, 0, 100, 0, 100, 0,
+
+
+            ], 1);
         }
 
         const stop = () => {
