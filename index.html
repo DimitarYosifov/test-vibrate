@@ -16,7 +16,7 @@
     flex-direction: column;
     width: 100%;"
  >
-        <div onclick="start()" style="padding: 25px;">start4</div>
+        <div onclick="start()" style="padding: 25px;">start5</div>
         <div onclick="stop()" style="padding: 25px;">stop</div>
     </div>
 
@@ -24,7 +24,7 @@
 
         const start = () => {
             if (window.navigator && window.navigator.vibrate) {
-                window.navigator.vibrate(5000);
+                window.navigator.vibrate([5000]);
             }
         }
 
