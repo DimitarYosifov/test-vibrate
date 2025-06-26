@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test vibrate</title>
+</head>
+
+<body>
+    <div onclick="start()">start</div>
+    <div onclick="stop()">stop</div>
+    <script>
+
+        const start = () => {
+            if (window.navigator && window.navigator.vibrate) {
+                window.navigator.vibrate(5000);
+            }
+        }
+
+        const stop = () => {
+            if (window.navigator && window.navigator.vibrate) {
+                window.navigator.vibrate(0);
+            }
+        }
+
+    </script>
+</body>
+
+</html>
