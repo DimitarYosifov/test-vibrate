@@ -11,7 +11,7 @@
     <div style="  
     align-items: center;
     flex-wrap: wrap;
-    display: flex;
+    display: flex;  
     justify-content: center;
     flex-direction: column;
     width: 100%;"
@@ -30,7 +30,7 @@
 
         const stop = () => {
             if (window.navigator && window.navigator.vibrate) {
-                window.navigator.vibrate(0);
+                window.navigator.vibrate([]);
             }
         }
 
